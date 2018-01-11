@@ -1,5 +1,5 @@
 {
-    "name": "indexer",
+    "name": "js-indexer",
     "version": "0.1.0",
     "description":
         "creates index-file for a given folder to expose everthing inside",
