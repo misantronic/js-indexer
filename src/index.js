@@ -28,13 +28,14 @@ const file = cli.flags.file;
 const dir = dirname(file);
 const ext = extname(file);
 
-const content = sync(`${dir}/**/!(index)${ext}`)
-    .map(
-        line =>
-            "export * from '" +
-            line.replace(`${dir}/`, './').replace(ext, '') +
-            "';"
-    )
-    .join('\n');
+const content =
+    sync(`${dir}/**/!(index)${ext}`)
+        .map(
+            line =>
+                "export * from '" +
+                line.replace(`${dir}/`, './').replace(ext, '') +
+                "';"
+        )
+        .join('\n') + '\n';
 
 writeFileSync(file, content, 'utf8');
