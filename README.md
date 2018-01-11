@@ -1,4 +1,5 @@
 # js-indexer
+
 creates index-file for a given folder to expose everthing inside
 
 # usage
@@ -6,5 +7,5 @@ creates index-file for a given folder to expose everthing inside
 ```bash
 npm install js-indexer --save-dev
 
-./node_modules/.bin/js-indexer --file ./src/components/index.js
-``` 
+./node_modules/.bin/js-indexer ./src/components/index.js ./src/utils/index.ts
+```
