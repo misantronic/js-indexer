@@ -1,6 +1,6 @@
 {
     "name": "js-indexer",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description":
         "creates index-file for a given folder to expose everthing inside",
     "main": "src/index",
@@ -20,5 +20,8 @@
     "devDependencies": {
         "glob": "^7.1.2",
         "meow": "^4.0.0"
+    },
+    "bin": {
+        "js-indexer": "src/index.js"
     }
 }

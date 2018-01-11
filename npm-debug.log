@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/dschkalee/.nvm/versions/node/v6.12.0/bin/node',
+1 verbose cli   '/Users/dschkalee/.nvm/versions/node/v6.12.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.12.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/dschkalee/src/js-indexer',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/dschkalee/.npm/js-indexer/0.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/dschkalee/.npm correctMkdir not in flight; initializing
+10 info lifecycle js-indexer@0.1.0~prepublish: js-indexer@0.1.0
+11 silly lifecycle js-indexer@0.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/dschkalee/.npm/js-indexer/0.1.0/package.tgz',
+12 verbose tar pack   '/Users/dschkalee/src/js-indexer' ]
+13 verbose tarball /Users/dschkalee/.npm/js-indexer/0.1.0/package.tgz
+14 verbose folder /Users/dschkalee/src/js-indexer
+15 verbose addLocalTarball adding from inside cache /Users/dschkalee/.npm/js-indexer/0.1.0/package.tgz
+16 verbose correctMkdir /Users/dschkalee/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd js-indexer@0.1.0
+18 verbose afterAdd /Users/dschkalee/.npm/js-indexer/0.1.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/dschkalee/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/dschkalee/.npm/js-indexer/0.1.0/package/package.json written
+21 silly publish { name: 'js-indexer',
+21 silly publish   version: '0.1.0',
+21 silly publish   description: 'creates index-file for a given folder to expose everthing inside',
+21 silly publish   main: 'src/index',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/misantronic/indexer.git' },
+21 silly publish   author: { name: 'David Schkalee', email: 'david.schkalee@magicline.de' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/misantronic/indexer/issues' },
+21 silly publish   homepage: 'https://github.com/misantronic/indexer#readme',
+21 silly publish   devDependencies: { glob: '^7.1.2', meow: '^4.0.0' },
+21 silly publish   readme: '# indexer\ncreates index-file for a given folder and exports everything inside\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '7bc19bacbbc7a6cf53b169a8445230480b65996e',
+21 silly publish   _id: 'js-indexer@0.1.0',
+21 silly publish   _shasum: '6a4ab8241bf978758f827469342202a7f6143273',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name js-indexer
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'js-indexer',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'js-indexer',
+26 silly mapToRegistry   name: 'js-indexer',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/js-indexer
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/dschkalee/.npm/js-indexer/0.1.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/js-indexer
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 5:44:52 PM
+33 verbose request using bearer token for auth
+34 verbose request id 040bcb1f003e3ebb
+35 http request PUT https://registry.npmjs.org/js-indexer
+36 http 403 https://registry.npmjs.org/js-indexer
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '91',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 11 Jan 2018 16:44:53 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-hhn1545-HHN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1515689093.523649,VS0,VE1225',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /Users/dschkalee/.npm/registry.npmjs.org/js-indexer on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published version 0.1.0. : js-indexer
+40 verbose stack     at makeError (/Users/dschkalee/.nvm/versions/node/v6.12.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/dschkalee/.nvm/versions/node/v6.12.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/dschkalee/.nvm/versions/node/v6.12.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/dschkalee/.nvm/versions/node/v6.12.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/dschkalee/.nvm/versions/node/v6.12.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/dschkalee/.nvm/versions/node/v6.12.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid js-indexer
+43 verbose cwd /Users/dschkalee/src/js-indexer
+44 error Darwin 16.7.0
+45 error argv "/Users/dschkalee/.nvm/versions/node/v6.12.0/bin/node" "/Users/dschkalee/.nvm/versions/node/v6.12.0/bin/npm" "publish"
+46 error node v6.12.0
+47 error npm  v3.10.10
+48 error code E403
+49 error You cannot publish over the previously published version 0.1.0. : js-indexer
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
