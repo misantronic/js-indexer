@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { sync } = require('glob');
 const { writeFileSync } = require('fs');
 const { extname, dirname } = require('path');

@@ -1,6 +1,6 @@
 {
     "name": "js-indexer",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description":
         "creates index-file for a given folder to expose everthing inside",
     "main": "src/index",
