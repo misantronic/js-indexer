@@ -9,17 +9,19 @@ const cli = meow();
 const files = cli.input;
 
 files.forEach(file => {
-    console.log(file);
-
     const dir = dirname(file);
     const ext = extname(file);
 
     const content =
-        sync(`${dir}/**/!(index)${ext}`)
+        sync(`${dir}/**/*${ext}`)
+            .filter(file => file !== `${dir}/index${ext}`)
             .map(
                 line =>
                     "export * from '" +
-                    line.replace(`${dir}/`, './').replace(ext, '') +
+                    line
+                        .replace(`${dir}/`, './')
+                        .replace(ext, '')
+                        .replace('/index', '') +
                     "';"
             )
             .join('\n') + '\n';
