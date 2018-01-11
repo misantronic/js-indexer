@@ -1,0 +1,24 @@
+{
+    "name": "indexer",
+    "version": "0.1.0",
+    "description":
+        "creates index-file for a given folder to expose everthing inside",
+    "main": "src/index",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/misantronic/indexer.git"
+    },
+    "author": "David Schkalee <david.schkalee@magicline.de>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/misantronic/indexer/issues"
+    },
+    "homepage": "https://github.com/misantronic/indexer#readme",
+    "devDependencies": {
+        "glob": "^7.1.2",
+        "meow": "^4.0.0"
+    }
+}
