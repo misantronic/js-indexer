@@ -1,8 +1,7 @@
 {
     "name": "js-indexer",
-    "version": "0.5.0",
-    "description":
-        "creates index-file for a given folder to expose everthing inside",
+    "version": "0.6.0",
+    "description": "creates index-file for a given folder to expose everthing inside",
     "main": "src/index",
     "scripts": {
         "test": "node src ./tests/components/index.tsx ./tests/utils/index.ts"
@@ -17,11 +16,11 @@
         "url": "https://github.com/misantronic/indexer/issues"
     },
     "homepage": "https://github.com/misantronic/indexer#readme",
-    "devDependencies": {
-        "glob": "^7.1.2",
-        "meow": "^4.0.0"
-    },
     "bin": {
         "js-indexer": "src/index.js"
+    },
+    "dependencies": {
+        "glob": "^7.1.2",
+        "meow": "^4.0.0"
     }
 }
