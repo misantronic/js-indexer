@@ -13,7 +13,7 @@ files.forEach(file => {
     const ext = extname(file);
 
     const content =
-        sync(`${dir}/**/*${ext}`)
+        sync(`${dir}/**/!(*[._]test)${ext}`)
             .filter(file => file !== `${dir}/index${ext}`)
             .map(
                 line =>

@@ -1,11 +1,11 @@
 {
     "name": "js-indexer",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "description":
         "creates index-file for a given folder to expose everthing inside",
     "main": "src/index",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "node src ./tests/components/index.tsx ./tests/utils/index.ts"
     },
     "repository": {
         "type": "git",
