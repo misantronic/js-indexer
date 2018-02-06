@@ -1,7 +1,8 @@
 {
     "name": "js-indexer",
-    "version": "0.6.0",
-    "description": "creates index-file for a given folder to expose everthing inside",
+    "version": "0.7.0",
+    "description":
+        "creates index-file for a given folder to expose everthing inside",
     "main": "src/index",
     "scripts": {
         "test": "node src ./tests/components/index.tsx ./tests/utils/index.ts"
