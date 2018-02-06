@@ -2,7 +2,7 @@
 
 const { sync } = require('glob');
 const { writeFileSync } = require('fs');
-const { extname, dirname } = require('path');
+const { extname, dirname, basename } = require('path');
 const meow = require('meow');
 
 const cli = meow();
@@ -20,6 +20,7 @@ files.forEach(file => {
                 .join(',')}}`
         )
             .filter(file => file !== `${dir}/index${ext}`)
+            .filter(file => basename(file).startsWith('_') === false)
             .map(
                 line =>
                     "export * from '" +
