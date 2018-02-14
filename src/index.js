@@ -13,7 +13,7 @@ files.forEach(file => {
     const ext = extname(file);
     const exts = [ext, '.js', '.jsx', '.ts', '.tsx'];
 
-    const content =
+    let content =
         sync(
             `${dir}/**/!(*[._]test).{${exts
                 .map(ext => ext.substr(1))
@@ -31,6 +31,8 @@ files.forEach(file => {
                     "';"
             )
             .join('\n') + '\n';
+
+    content = `// @generated\n${content}`;
 
     writeFileSync(file, content, 'utf8');
 });
