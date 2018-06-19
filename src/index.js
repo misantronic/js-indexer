@@ -11,7 +11,7 @@ const files = cli.input;
 files.forEach(file => {
     const dir = dirname(file);
     const ext = extname(file);
-    const exts = [ext, '.js', '.jsx', '.ts', '.tsx'];
+    const exts = [ext, '\\.js', '\\.jsx', '\\.ts', '\\.tsx'];
 
     let content =
         sync(
