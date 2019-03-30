@@ -15,6 +15,9 @@ const meow = require('meow');
 
 const cli = meow();
 const files = cli.input;
+const {
+    filter
+} = cli.flags;
 
 files.forEach(file => {
     const dir = dirname(file);
@@ -27,6 +30,7 @@ files.forEach(file => {
                 .map(ext => ext.substr(1))
                 .join(',')}}`
         )
+        .filter(file => filter ? new RegExp(filter).test(file) : true)
         .filter(file => file !== `${dir}/index${ext}`)
         .filter(file => basename(file).startsWith('_') === false)
         .map(
