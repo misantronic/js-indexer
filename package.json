@@ -1,26 +1,26 @@
 {
-    "name": "js-indexer",
-    "version": "0.9.0",
-    "description": "creates index-file for a given folder to expose everthing inside",
-    "main": "src/index",
-    "scripts": {
-        "test": "node src ./tests/components/index.tsx ./tests/utils/index.ts"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/misantronic/indexer.git"
-    },
-    "author": "David Schkalee <david.schkalee@magicline.de>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/misantronic/indexer/issues"
-    },
-    "homepage": "https://github.com/misantronic/indexer#readme",
-    "bin": {
-        "js-indexer": "src/index.js"
-    },
-    "dependencies": {
-        "glob": "^7.1.2",
-        "meow": "^4.0.0"
-    }
+  "name": "js-indexer",
+  "version": "0.10.0",
+  "description": "creates index-file for a given folder to expose everthing inside",
+  "main": "src/index",
+  "scripts": {
+    "test": "node src ./tests/components/index.tsx ./tests/utils/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misantronic/indexer.git"
+  },
+  "author": "David Schkalee <david.schkalee@magicline.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/misantronic/indexer/issues"
+  },
+  "homepage": "https://github.com/misantronic/indexer#readme",
+  "bin": {
+    "js-indexer": "src/index.js"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "meow": "^4.0.0"
+  }
 }
